@@ -1,9 +1,7 @@
 words = "Ikechukwuyeremefuna"
 words.upcase!
 each_word = words.split""
-i = 1
-while words.length >= i
-  each_word.each {|s| 
-  puts "#{i}. #{s}"
-  i += 1}
+
+for i in 0...each_word.length
+	puts "#{i+1} #{each_word[i]}"
 end
